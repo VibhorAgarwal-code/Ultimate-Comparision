@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <title>Comparision between Mobilenet and Google Lens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="wooden.webp">
+  <center>
+    <h1><img src="lens.png">Google lens vs Moblenet<img src="mn.png"></h1>
+    <hr>
+    <div class="defination">
+      <div id="google lens">
+        <h3>Google Lens</h3>
+        <hr>
+        <p>Google Lens is an image recognition technology developed by Google, designed to bring up<br> relevant
+          information related to objects it identifies using visual analysis based on a neural network.</p>
+      </div>
+      <div id="Mobilenet">
+        <h3>Mobilenet</h3>
+        <hr>
+        <p>MobileNet proposes a depthwise separable convolution architecture that shrinks the <br>neural network model
+          so that it can work on the resource restriction issues of edge devices.</p>
+      </div>
+    </div>
+    <hr class="border">
+    <hr class="border">
+  </center>
+  <ol>
+    <!--glass-->
+      <div class="test_image_result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <img src="glass.jpg" class="img-responsive">
+      </li>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> Google Lens</b>
+        <span>: Glass</span>
+      </h5>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> MobileNet</b>
+        <span>: Ruler</span>
+      </h5>
+
+      <div class="mini-reslt" class="col-xs-12">
+        <h4>Result -</h4>
+        <hr>
+        <h4>I found out google lens more accurate.</h4>
+      </div>
+    </div>
+    <br>
+    <!--car-->
+    <div class="test_image_result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <img src="car.jpg" class="img-responsive">
+      </li>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> Google Lens</b>
+        <span>: Van</span>
+      </h5>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> MobileNet</b>
+        <span>: Car</span>
+      </h5>
+
+      <div class="mini-reslt" class="col-xs-12">
+        <h4>Result -</h4>
+        <hr>
+        <h4>MobileNet is more accurate this time.</h4>
+      </div>
+    </div>
+    <br>
+    <!--bridge-->
+    <div class="test_image_result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <img src="bride.JPG" class="img-responsive">
+      </li>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> Google Lens</b>
+        <span>: Moon bridge</span>
+      </h5>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> MobileNet</b>
+        <span>: Bridge</span>
+      </h5>
+
+      <div class="mini-reslt" class="col-xs-12">
+        <h4>Result -</h4>
+        <hr>
+        <h4>Both are accurate but lens specified the exact name.</h4>
+      </div>
+    </div>
+    <br>
+    <!--clock-->
+    <div class="test_image_result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <img src="clock.jpg" class="img-responsive">
+      </li>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> Google Lens</b>
+        <span>: Analog clock</span>
+      </h5>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> MobileNet</b>
+        <span>: Clock</span>
+      </h5>
+
+      <div class="mini-reslt" class="col-xs-12">
+        <h4>Result -</h4>
+        <hr>
+        <h4>Clock is right but analog is the type which google lens specified</h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!--bottle-->
+    <div class="test_image_result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <img src="bottle.jpg" class="img-responsive">
+      </li>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> Google Lens</b>
+        <span>: Plastic Bottle</span>
+      </h5>
+      <h5 class="col-sm-6 col-xs-12">
+        Output on <b> MobileNet</b>
+        <span>: Water bottle</span>
+      </h5>
+
+      <div class="mini-reslt" class="col-xs-12">
+        <h4>Result -</h4>
+        <hr>
+        <h4>Both are correct, bottle material is plastic and purpose is water so a tie.</h4>
+      </div>
+    </div>
+  </ol>
+ 
+   
+<div class="result">
+  I FOUND OUT GOOGLE LENS MORE ACCURATE BY WINNING OVER MobileNet BY 2 POINTS.
+</div>
+
+</body>
+</html>
